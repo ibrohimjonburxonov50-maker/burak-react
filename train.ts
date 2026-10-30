@@ -18,10 +18,18 @@
 // console.log(countOccurrences(data, "model")); // Natija: 3
 
 //MIT Task Y
-function findIntersection<T>(arr1: T[], arr2: T[]): T[] {
-    const set2 = new Set(arr2);
-    return [...new Set(arr1.filter(item => set2.has(item)))];
+// function findIntersection<T>(arr1: T[], arr2: T[]): T[] {
+//     const set2 = new Set(arr2);
+//     return [...new Set(arr1.filter(item => set2.has(item)))];
+// }
+
+// const result = findIntersection([1, 2, 3], [3, 2, 0]);
+// console.log(result); 
+
+//MIT Task Z
+function sumEvens(arr: number[]): number {
+    return arr.reduce((sum, num) => (num % 2 === 0 ? sum + num : sum), 0);
 }
 
-const result = findIntersection([1, 2, 3], [3, 2, 0]);
+const result = sumEvens([1, 2, 3]);
 console.log(result); 

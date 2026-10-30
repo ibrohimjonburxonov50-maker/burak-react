@@ -2,7 +2,6 @@ import { createTheme } from '@mui/material/styles';
 import { common } from '@mui/material/colors';
 import shadow from './shadow';
 import typography from './typography';
-import { maxWidth } from '@mui/system';
 
 /**
  * LIGHT THEME (DEFAULT)
@@ -21,7 +20,7 @@ const light = {
     secondary: {
       contrastText: '#343434',
       main: '#d7b586',
-    }, 
+    },
     text: {
       primary: '#343434',
       secondary: '#d7b586',
